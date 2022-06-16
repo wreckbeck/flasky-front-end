@@ -1,5 +1,6 @@
 import React from "react";
 import Cat from "./Cat";
+import PropTypes from "prop-types";
 
 export const CatList = ({ cats }) => {
   return (
@@ -10,4 +11,13 @@ export const CatList = ({ cats }) => {
       })}
     </ul>
   );
+};
+
+CatList.propTypes = {
+  cats: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      chipNumber: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 };
