@@ -15,6 +15,10 @@ const CatData = [
     name: "Beetle",
     chipNumber: "02468",
   },
+  {
+    name: "Elvis",
+    chipNumber: "",
+  },
 ];
 
 const DogData = [
